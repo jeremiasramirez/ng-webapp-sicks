@@ -4,7 +4,7 @@
   <ul class="responsive">
     <p *ngIf="!listVirus"><i class="fas fa-circle-notch"></i></p>
 
-      <button mat-button  *ngFor="let title of listVirus"  class="btn--red min bottoms " type="button" name="button">{{ title.name }}  <i class="fas fa-location-arrow between"></i></button>
+      <button mat-button style="border-bottom: 1px solid red" *ngFor="let title of listVirus"  class="btn--red min bottoms " type="button" name="button">{{ title.name }}  <i class="fas fa-location-arrow between"></i></button>
 
 
   </ul>
