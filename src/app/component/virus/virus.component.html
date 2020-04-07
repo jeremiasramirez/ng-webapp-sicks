@@ -3,9 +3,24 @@
 
   <ul class="responsive">
     <p *ngIf="!listVirus"><i class="fas fa-circle-notch"></i></p>
-    <button mat-button  *ngFor="let title of listVirus"  class="btn--red min bottoms" type="button" name="button">{{ title.name }}</button>
+
+      <button mat-button  *ngFor="let title of listVirus"  class="btn--red min bottoms " type="button" name="button">{{ title.name }}  <i class="fas fa-location-arrow between"></i></button>
+
 
   </ul>
 
 
 </div>
+
+
+<section class="container responsive">
+
+
+  <h1>Hola container</h1>
+  <article class="responsive inBottom">
+    <mat-spinner color="warn"></mat-spinner>
+  </article>
+
+
+
+</section>

@@ -10,5 +10,17 @@
   {
     "id": 3,
     "name": "Virus Hanta"
+  },
+  {
+    "id": 4,
+    "name": "Gripe aviar"
+  },
+  {
+    "id": 5,
+    "name": "Virus de Lassa"
+  },
+  {
+    "id": 6,
+    "name": "Covid-19"
   }
 ]

@@ -6,13 +6,20 @@
   height: 100vh;
   padding: 0 10px 0 0;
 }
+.between{
+  float: right;
+  color: red;
 
+}
 .bottoms{
   padding-bottom: 5px;
   padding-top: 5px;
   /* margin-bottom: 1.3px; */
 }
 
+.container{
+  padding: 1em;
+}
 .fa-circle-notch{
    animation: colorate 2.5s infinite linear;
 }
