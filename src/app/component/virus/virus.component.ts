@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ServiceApp } from '../../services/service.app'
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute , Router} from "@angular/router";
 @Component({
   selector: 'app-virus',
   templateUrl: './virus.component.html',
@@ -9,7 +9,9 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class VirusComponent   {
   public listVirus : any[];
-  constructor(public serv:ServiceApp, public param:ActivatedRoute) {
+  constructor(public serv:ServiceApp, public router:Router, public param:ActivatedRoute) {
+      this.router.navigate(["virus", ""])
+      this.serv.changeTextNamePage("Virus")
       this.setVirusToArray()
   }
   setVirusToArray(){

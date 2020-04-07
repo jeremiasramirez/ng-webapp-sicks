@@ -22,5 +22,18 @@
   {
     "id": 6,
     "name": "Covid-19"
+
+  },
+  {
+    "id": 7,
+    "name": "Junín"
+  },
+  {
+    "id": 8,
+    "name": "Crimea-Congo"
+  },
+  {
+    "id": 9,
+    "name": "Chikunguña"
   }
 ]
