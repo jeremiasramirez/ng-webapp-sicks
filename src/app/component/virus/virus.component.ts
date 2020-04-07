@@ -10,7 +10,7 @@ import { ActivatedRoute , Router} from "@angular/router";
 export class VirusComponent   {
   public listVirus : any[];
   constructor(public serv:ServiceApp, public router:Router, public param:ActivatedRoute) {
-      this.router.navigate(["virus", ""])
+      // this.router.navigate(["virus", ""])
       this.serv.changeTextNamePage("Virus")
       this.setVirusToArray()
   }
