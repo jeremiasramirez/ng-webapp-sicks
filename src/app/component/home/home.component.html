@@ -14,7 +14,7 @@
 
 </section>
 
-<section class="inBottom  contentHome responsive" style="overflow-x:hidden">
+<section class="inBottom  contentHome responsive" style="overflow-x:hidden" *ngIf="!spinner.off">
   <h1 class="text--white title">Conoce los virus mas conocidos.</h1>
   <button (click)="onVirus()" type="button"  class="minmin" mat-stroked-button name="button">Conocer <i class="fas fa-location-arrow"></i></button>
 </section>

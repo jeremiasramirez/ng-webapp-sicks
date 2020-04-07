@@ -12,15 +12,17 @@ export class ServiceApp {
   constructor(){
     console.log('service run..');
     this.getVirusTitle()
+     
   }
 
   public changeTextNamePage(name:string){
     document.getElementById('idTheme').innerText=name
   }
   deleteSideNav(){
+
     timer(0).subscribe(timing=>{
       let x = document.getElementById("sidenav")
-      if (x) x.style.display = "none"
+      if (x) x.style.display ="none"
     })
 
   }

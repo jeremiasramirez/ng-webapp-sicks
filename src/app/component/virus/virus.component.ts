@@ -13,6 +13,13 @@ export class VirusComponent   {
       // this.router.navigate(["virus", ""])
       this.serv.changeTextNamePage("Virus")
       this.setVirusToArray()
+
+  }
+
+  showSide(){
+
+     this.serv.deleteSideNav();
+ 
   }
   setVirusToArray(){
 

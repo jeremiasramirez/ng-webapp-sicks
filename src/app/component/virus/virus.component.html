@@ -1,7 +1,11 @@
+<div class="show">
+    <button (click)="showSide()" type="button" mat-button name="button"> <i class="letter3 fas fa-stream"> </i></button>
+</div>
 <div class="sidenav inRigth" id="sidenav">
   <!-- <h1 class="text--white">Lista</h1> -->
 
   <ul class="responsive">
+
     <p *ngIf="!listVirus"><i class="fas fa-circle-notch"></i></p>
 
       <button mat-button style="border-bottom: 1px solid red" *ngFor="let title of listVirus"  class="btn--red min bottoms " type="button" name="button">{{ title.name }}  <i class="fas fa-location-arrow between"></i></button>
@@ -17,9 +21,9 @@
 
 
   <h1>Hola container</h1>
-  <article class="responsive inBottom">
+  <!-- <article class="responsive inBottom">
     <mat-spinner color="warn"></mat-spinner>
-  </article>
+  </article> -->
 
 
   <p>
