@@ -2,11 +2,10 @@
   <!-- <h1 class="text--white">Lista</h1> -->
 
   <ul class="responsive">
-    <button mat-button  class="btn--red min bottoms" type="button" name="button">Pepper</button>
-    <button  mat-button class="btn--red min bottoms" type="button" name="button">Pepper</button>
-    <button  mat-button class="btn--red min bottoms" type="button" name="button">Pepper</button>
+    <p *ngIf="!listVirus"><i class="fas fa-circle-notch"></i></p>
+    <button mat-button  *ngFor="let title of listVirus"  class="btn--red min bottoms" type="button" name="button">{{ title.name }}</button>
+
   </ul>
 
 
 </div>
- 

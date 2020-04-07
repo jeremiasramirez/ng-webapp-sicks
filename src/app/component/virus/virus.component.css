@@ -9,5 +9,28 @@
 
 .bottoms{
   padding-bottom: 5px;
-  margin-bottom: 0px;
+  padding-top: 5px;
+  /* margin-bottom: 1.3px; */
+}
+
+.fa-circle-notch{
+   animation: colorate 2.5s infinite linear;
+}
+@keyframes colorate {
+   to{
+     transform: rotate(360deg);
+     transition: 1s;
+   }
+
+   30%{
+     color: yellow;
+   },
+   80%{
+     color: orangered;
+   }
+
+   90%{
+     color: blue;
+   }
+
 }

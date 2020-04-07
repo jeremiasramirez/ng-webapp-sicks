@@ -8,8 +8,15 @@ import { ActivatedRoute } from "@angular/router";
   providers: [ServiceApp]
 })
 export class VirusComponent   {
- 
+  public listVirus : any[];
   constructor(public serv:ServiceApp, public param:ActivatedRoute) {
+      this.setVirusToArray()
+  }
+  setVirusToArray(){
+
+    this.serv.getVirusTitle().subscribe(data=>{
+      this.listVirus = data;
+    })
 
   }
 

@@ -1,15 +1,17 @@
 import { Injectable } from "@angular/core"
 import { timer } from "rxjs";
+import { ajax } from 'rxjs/ajax'
+import { pluck ,delay} from 'rxjs/operators'
 
 
 @Injectable()
 
 export class ServiceApp {
 
+
   constructor(){
-
-
     console.log('service run..');
+    this.getVirusTitle()
   }
 
   public changeTextNamePage(name:string){
@@ -29,6 +31,16 @@ export class ServiceApp {
     })
 
   }
+
+  getVirusTitle(){
+
+    return ajax.get('assets/data.json').pipe(
+      delay(400),
+      pluck('response')
+    )
+
+  }
+
 
 
 }
