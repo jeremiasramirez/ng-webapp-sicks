@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router'
 @Component({
   selector: 'app-empty',
   templateUrl: './empty.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmptyComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router:Router) {this.router.navigate(["home"]) }
 
   ngOnInit(): void {
   }

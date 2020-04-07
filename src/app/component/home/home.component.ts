@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { ServiceApp } from '../../services/service.app'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css','../../app.component.css'],
+  providers: [ServiceApp]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent  {
 
-  constructor() { }
+  constructor(public service_:ServiceApp) {
 
-  ngOnInit(): void {
+
   }
+
+  ngOnInit(){
+    this.service_.changeTextNamePage('Home')
+    this.service_.showSideNav()
+  }
+
+
+
 
 }

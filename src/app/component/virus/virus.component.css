@@ -1,0 +1,13 @@
+
+.sidenav{
+  float: left;
+  width: 210px;
+   background-color: rgba(212, 36, 58, 0.904);
+  height: 100vh;
+  padding: 0 10px 0 0;
+}
+
+.bottoms{
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}

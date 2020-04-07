@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { ServiceApp } from '../../services/service.app'
+import { ActivatedRoute } from "@angular/router";
 @Component({
   selector: 'app-virus',
   templateUrl: './virus.component.html',
-  styleUrls: ['./virus.component.css']
+  styleUrls: ['./virus.component.css'],
+  providers: [ServiceApp]
 })
-export class VirusComponent implements OnInit {
+export class VirusComponent   {
+ 
+  constructor(public serv:ServiceApp, public param:ActivatedRoute) {
 
-  constructor() { }
+  }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.serv.showSideNav()
   }
 
 }
