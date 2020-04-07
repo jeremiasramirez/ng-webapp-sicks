@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 // component
 import { AppComponent } from './app.component';
+import { VirusComponent } from './component/virus/virus.component';
+import { AboutComponent } from './component/about/about.component';
+import { HomeComponent } from './component/home/home.component';
 
 
 // material
@@ -11,10 +14,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { VirusComponent } from './component/virus/virus.component';
-import { AboutComponent } from './component/about/about.component';
-import { HomeComponent } from './component/home/home.component';
-
+import { ROUTING } from "./app.routing";
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +27,7 @@ import { HomeComponent } from './component/home/home.component';
     MatSidenavModule,
     MatButtonModule,
     MatListModule,
+    ROUTING,
     MatProgressSpinnerModule,
     BrowserAnimationsModule
   ],
