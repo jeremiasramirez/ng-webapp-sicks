@@ -15,12 +15,14 @@ import {MatListModule} from '@angular/material/list';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ROUTING } from "./app.routing";
+import { EmptyComponent } from './empty/empty.component';
 @NgModule({
   declarations: [
     AppComponent,
     VirusComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    EmptyComponent
   ],
   imports: [
     BrowserModule,

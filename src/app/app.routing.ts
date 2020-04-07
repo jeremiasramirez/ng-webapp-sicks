@@ -1,4 +1,5 @@
 import { Routes , RouterModule} from "@angular/router"
+import { ModuleWithProviders } from "@angular/core"
 
 
 
@@ -19,4 +20,4 @@ const ROUTES : Routes = [
 
 ]
 
-export const ROUTING = RouterModule.forRoot(ROUTES);
+export const ROUTING:ModuleWithProviders = RouterModule.forRoot(ROUTES);

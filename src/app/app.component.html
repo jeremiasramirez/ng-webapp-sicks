@@ -1,12 +1,21 @@
 <!-- menu -->
 <div class="menu--red contentLeft">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">About</a></li>
+  <li><a [routerLinkActive]="['active']"  [routerLink]="['/home']">Home</a></li>
+  <li><a [routerLinkActive]="['active']"  [routerLink]="['/about']">About</a></li>
 </div>
 <div class="theme--red">
    <p>Virus</p>
 </div>
 
 <div class="sidenav">
-  <h1 class="text--white">Lista</h1>
+  <!-- <h1 class="text--white">Lista</h1> -->
+
+  <mat-list class="responsive">
+
+   <mat-list-item mat-button> Pepper </mat-list-item>
+   <mat-list-item> Salt </mat-list-item>
+   <mat-list-item> Paprika </mat-list-item>
+ </mat-list>
+
+
 </div>
