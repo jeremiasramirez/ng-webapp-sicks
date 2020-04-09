@@ -1,17 +1,18 @@
 import { Injectable } from "@angular/core"
 import { timer } from "rxjs";
 import { ajax } from 'rxjs/ajax'
-import { pluck ,delay} from 'rxjs/operators'
+import { pluck ,delay, find,take, map} from 'rxjs/operators'
 
 
 @Injectable()
 
 export class ServiceApp {
 
+  public urlTitle : string = 'assets/api/lists.virus.json'
+  public urlOnlyVirus : string = 'assets/api/data.json'
 
   constructor(){
     console.log('service run..');
-    this.getVirusTitle()
 
   }
 
@@ -36,16 +37,22 @@ export class ServiceApp {
 
   getVirusTitle(){
 
-    return ajax.get('assets/api/lists.virus.json').pipe(
+    return ajax.get(this.urlTitle).pipe(
+      delay(400),
+      pluck('response')
+    )
+
+  }
+  onlyVirus(id:number){
+
+    return  ajax.get(this.urlOnlyVirus).pipe(
       delay(400),
       pluck('response')
     )
 
   }
 
-  onlyVirus(id:number=1){
 
-  }
 
 
 

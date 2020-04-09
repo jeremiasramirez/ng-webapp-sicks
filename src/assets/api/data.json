@@ -2,44 +2,37 @@
   {
     "id": 1,
     "name": "Virus de Marburg",
-    "title": "Fiebre hemorrágica de Marburgo",
-    "image": "marburgo.jpg",
-    "description" : "El virus más letal del mundo es el Marburg, similar al virus del Ébola, está
-    considerado uno de los agentes patógenos más agresivos para los seres
-    humanos</br>
-    El primer brote identificado fue en la ciudad alemana de Marburg en 1967
-    mientras científicos de un laboratorio trabajaban con cultivos celulares de los
-    riñones de simios verdes ugandeses, que estaban infectados por el virus, el
-    número de contagiados fue de 37, de los cuales fallecieron 7.</br>
-    El virus ocasiona un dolor de cabeza agudo y malestar general en el cuerpo,
-    además de hemorragias severas en distintas partes del cuerpo. La tasa de
-    mortalidad va del 25 al 80 por ciento. El peor brote fue en 2004 en Angola,
-    donde de los 374 infectados fallecieron 329."
+    "title": "Fiebre hemorrágica de Marburgo"
   },
   {
     "id": 2,
-    "name": "Ébola"
+    "name": "Ébola",
+    "title": "Virus de Ébola"
   },
   {
     "id": 3,
-    "name": "Virus Hanta"
+    "name": "Virus Hanta",
+    "title" : " Virus Hanta o Hantaan"
   },
   {
     "id": 4,
-    "name": "Gripe aviar"
+    "name": "Gripe aviar",
+    "title" : "Virus de la gripe aviar"
   },
   {
     "id": 5,
-    "name": "Virus de Lassa"
+    "name": "Virus de Lassa",
+    "title" :  "Virus de Lassa"
   },
   {
     "id": 6,
-    "name": "Covid-19"
-
+    "name": "Covid-19",
+    "title" : "Corona virus"
   },
   {
     "id": 7,
-    "name": "Junín"
+    "name": "Junín",
+    "title" : "Virus de junín"
   },
   {
     "id": 8,
