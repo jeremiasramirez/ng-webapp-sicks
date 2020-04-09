@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { ServiceApp } from '../../services/service.app'
 import { ActivatedRoute , Router} from "@angular/router";
 import { timer , Subject} from "rxjs";
+import { take} from "rxjs/operators";
+
+
 @Component({
   selector: 'app-virus',
   templateUrl: './virus.component.html',
@@ -11,11 +14,15 @@ import { timer , Subject} from "rxjs";
 export class VirusComponent   {
 
   public listVirus : any[];
-  dataVirus = [];
+  public dataVirus = [];
+  public spinner = {
+    off:true
+  }
   public obs = new Subject()
 
   constructor(public serv:ServiceApp, public router:Router, public param:ActivatedRoute) {
-      timer(500).subscribe(timing=>this.router.navigate(["virus", ""]))
+     this.okSpinner()
+     this.router.navigate(["virus", ""])
       this.serv.changeTextNamePage("Virus")
       this.setVirusToArray()
 
@@ -28,9 +35,10 @@ export class VirusComponent   {
       })
 
       this.obs.subscribe((data:any)=>{
+
         this.dataVirus = [];
         this.dataVirus.unshift(data);
-        console.log(data)
+
       })
 
 
@@ -39,15 +47,12 @@ export class VirusComponent   {
     this.serv.onlyVirus(id).subscribe(data=>{
 
       for(let i=0;i <data.length; i++){
-        if (data[i].id == id){
 
+        if (data[i].id == id){
          this.obs.next(data[i])
         }
+
       }
-
-
-
-
 
     })
   }
@@ -58,9 +63,13 @@ export class VirusComponent   {
      this.serv.deleteSideNav();
 
   }
+  okSpinner(){
+    this.spinner.off=true
+    timer(500).subscribe(timing=>this.spinner.off=false)
+  }
   okGo(id:number=0){
-
-    if (id === 0) return
+    this.okSpinner()
+    if (id == 0) return
     else this.router.navigate(["virus", id]);
 
   }

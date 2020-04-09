@@ -16,10 +16,10 @@
 
 </div>
 
-<!-- <article class="responsive inBottom" *ngIf="">
-  <mat-spinner color="warn"></mat-spinner>
-</article> -->
-<section class="container responsive in" *ngIf="dataVirus">
+<article class="responsive inBottom" *ngIf="spinner.off">
+  <mat-spinner color="accent"></mat-spinner>
+</article>
+<section class="container responsive in" *ngIf="dataVirus && !spinner.off"  >
 
   <div class="" *ngFor="let data of dataVirus">
      <h1> {{data.title}} </h1>
