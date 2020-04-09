@@ -14,7 +14,7 @@ export class AboutComponent   {
     off:true
   }
   ngOnInit() {
-    timer(400).subscribe(timing=>this.spinner.off=false)
+    timer(700).subscribe(timing=>this.spinner.off=false)
     this.service_.changeTextNamePage('About')
   }
 
