@@ -19,16 +19,17 @@ export class VirusComponent   {
   showSide(){
 
      this.serv.deleteSideNav();
- 
+
   }
   setVirusToArray(){
 
     this.serv.getVirusTitle().subscribe(data=>{
       this.listVirus = data;
+      console.log(this.listVirus);
+
     })
 
   }
-
   ngOnInit(){
     this.serv.showSideNav()
   }

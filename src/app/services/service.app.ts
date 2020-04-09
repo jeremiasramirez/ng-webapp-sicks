@@ -12,7 +12,7 @@ export class ServiceApp {
   constructor(){
     console.log('service run..');
     this.getVirusTitle()
-     
+
   }
 
   public changeTextNamePage(name:string){
@@ -36,10 +36,14 @@ export class ServiceApp {
 
   getVirusTitle(){
 
-    return ajax.get('assets/data.json').pipe(
+    return ajax.get('assets/api/lists.virus.json').pipe(
       delay(400),
       pluck('response')
     )
+
+  }
+
+  onlyVirus(id:number=1){
 
   }
 
