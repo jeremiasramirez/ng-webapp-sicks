@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { VirusComponent } from './component/virus/virus.component';
 import { AboutComponent } from './component/about/about.component';
 import { HomeComponent } from './component/home/home.component';
+import { DirectiveClickWhite } from './component/directives/click.white';
 
 
 // material
@@ -24,7 +25,8 @@ import { CreditComponent } from './component/credit/credit.component';
     AboutComponent,
     HomeComponent,
     EmptyComponent,
-    CreditComponent
+    CreditComponent,
+    DirectiveClickWhite
   ],
   imports: [
     BrowserModule,
