@@ -16,13 +16,35 @@
 
 </div>
 
+
+<article class="responsive inRigth" *ngIf="!dataVirus.length">
+  <h1 class="text--white"> <i class="fas fa-arrow-left"></i> Seleccione un virus para mostrar</h1>
+</article>
+
+
+
 <article class="responsive inBottom" *ngIf="spinner.off">
   <mat-spinner ></mat-spinner>
 </article>
+
+
+
+
+
+
+
+
 <section class="container responsive in" *ngIf="dataVirus && !spinner.off"  >
 
-  <div class="" *ngFor="let data of dataVirus">
+  <div class="inBottom" *ngFor="let data of dataVirus">
      <h1> {{data.title}} </h1>
+      <p>{{data.description}}</p>
+     <div class="image__container responsive">
+       <img src="assets/virusimg/{{data.img}}" alt="data virus img" class="inBottom medium">
+     </div>
+
+   
+     <p>{{data.description_}}</p>
   </div>
 
 

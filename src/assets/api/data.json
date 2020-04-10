@@ -2,17 +2,26 @@
   {
     "id": 1,
     "name": "Virus de Marburg",
-    "title": "Fiebre hemorrágica de Marburgo"
+    "title": "Fiebre hemorrágica de Marburgo",
+    "img": "marburgo.jpg",
+    "description" : "El virus más letal del mundo es el Marburg ,similar al virus del Ébola, está considerado uno de los agentes patógenos más agresivos para los seres humanos.   ",
+    "description_" :" El primer brote identificado fue en la ciudad alemana de Marburg en 1967 mientras científicos de un laboratorio trabajaban con cultivos celulares de los riñones de simios verdes ugandeses, que estaban infectados por el virus, el número de contagiados fue de 37, de los cuales fallecieron 7."
   },
   {
     "id": 2,
     "name": "Ébola",
-    "title": "Virus de Ébola"
+    "title": "Virus de Ébola",
+    "img": "ebola.jpg",
+    "description" :"El brote del 2014 infectó a más de 2 mil personas, con una tasa de mortalidad que ronda el 90 por ciento. El epicentro de la epidemia se desarrolló en la capital de Guinea, Conakry, de donde se expandió a Liberia y Sierra Leona.",
+    "description_" : "Similar al virus de Marburg, ocasiona hemorragias en el cuerpo. No dispone aún de una vacuna o tratamiento específico para su combate, sin embargo, algunos tratamientos experimentales que no habían sido aprobados en humanos, podrían generar respuestas inmunes."
   },
   {
     "id": 3,
     "name": "Virus Hanta",
-    "title" : " Virus Hanta o Hantaan"
+    "title" : " Virus Hanta o Hantaan",
+    "img": "hanta.jpg",
+    "description" : "Este virus al igual que los dos anteriores se contrae por zoonosis, es decir que los animales pueden contagiar a los humanos, en este caso son los roedores, a través de excrementos y orina.",
+    "description_" : "El virus provoca un tipo de fiebre hemorrágica viral, la fiebre hemorrágica con síndrome renal (FHSR); o el síndrome pulmonar por hantavirus (SPHV), afecta pulmones y corazón, entre los síntomas se encuentran los dolores de cabeza, dolores musculares y fiebre, y al igual que los dos anteriores no existe tratamiento ni vacuna específica."
   },
   {
     "id": 4,
@@ -36,10 +45,12 @@
   },
   {
     "id": 8,
-    "name": "Crimea-Congo"
+    "name": "Crimea-Congo",
+    "title" : "La Fiebre Hemorrágica de Crimea-Congo "
   },
   {
     "id": 9,
-    "name": "Chikunguña"
+    "name": "Chikungunya",
+    "title" : "La fiebre chikungunya"
   }
 ]
