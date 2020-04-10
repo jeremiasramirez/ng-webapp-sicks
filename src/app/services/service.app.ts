@@ -12,7 +12,7 @@ export class ServiceApp {
   public urlOnlyVirus : string = 'assets/api/data.json'
 
   constructor(){
-    console.log('service run..');
+ 
 
   }
 

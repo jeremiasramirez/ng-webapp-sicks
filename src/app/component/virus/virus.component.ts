@@ -20,18 +20,21 @@ export class VirusComponent   {
     off:true,
     on:true
   }
+  public sizeRoutes:any  = 0;
+
   public obs = new Subject()
 
   constructor(public serv:ServiceApp, public router:Router, public param:ActivatedRoute) {
      this.okSpinner()
 
-     this.router.navigate(["virus", ""])
+     // this.router.navigate(["virus", ""])
       this.serv.changeTextNamePage("Virus")
       this.setVirusToArray()
 
       this.param.params.subscribe(param => {
 
         if (param.id){
+          this.sizeRoutes = param.id
           this.getData(param.id)
 
         }
@@ -95,6 +98,20 @@ export class VirusComponent   {
   }
   ngOnInit(){
     this.serv.showSideNav()
+  }
+
+  sliderRigth(){
+    if (this.sizeRoutes < 9){
+         (this.sizeRoutes++);
+        this.router.navigate(["virus", this.sizeRoutes])
+    }
+
+  }
+  sliderLeft(){
+    if (this.sizeRoutes > 1){
+    (this.sizeRoutes--);
+        this.router.navigate(["virus", this.sizeRoutes])
+    }
   }
 
 }

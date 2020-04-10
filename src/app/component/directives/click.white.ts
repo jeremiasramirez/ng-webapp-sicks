@@ -11,7 +11,7 @@ export class DirectiveClickWhite {
 
   @HostListener('click') clicks(){
 
-    this.el.nativeElement.style.color="orange"
+    this.el.nativeElement.style.color= "orange"
 
     setTimeout(() => {
       this.el.nativeElement.style.color=null

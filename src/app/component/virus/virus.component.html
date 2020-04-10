@@ -16,6 +16,16 @@
 
 </div>
 
+<div class="sliderContainer inRigth">
+
+  <div class=" responsive">
+    {{sizeRoutes}} de 9
+  </div>
+    
+  <button mat-button [disabled]="sizeRoutes == 1" click (click)="sliderLeft()"><i class="fas fa-arrow-left"></i></button>
+  <button mat-button [disabled]="sizeRoutes == 9" click (click)="sliderRigth()"><i class="fas fa-arrow-right"></i></button>
+
+</div>
 
 <article class="responsive inRigth" *ngIf="!dataVirus.length">
   <h1 class="text--white"> <i class="fas fa-arrow-left"></i> Seleccione un virus para mostrar</h1>
@@ -43,7 +53,7 @@
        <img src="assets/virusimg/{{data.img}}" alt="data virus img" class="inBottom medium">
      </div>
 
-   
+
      <p>{{data.description_}}</p>
   </div>
 

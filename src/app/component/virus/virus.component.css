@@ -9,6 +9,11 @@
 
     padding: 0 10px 0 0;
 }
+.sliderContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .show{
   position: absolute;
   left: -15px;
