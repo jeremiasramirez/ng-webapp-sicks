@@ -26,17 +26,26 @@
   {
     "id": 4,
     "name": "Gripe aviar",
-    "title" : "Virus de la gripe aviar"
+    "title" : "Virus de la gripe aviar",
+    "img" : "aviar.jpeg",
+    "description" : "La influenza aviar afecta principalmente a las aves, sin embargo, estas pueden contagiar el ser humano, el cerdo y el gato doméstico.",
+    "description_" : "El subtipo A(H5N1) infectó por vez primera al ser humano en 1997 en Hong Kong, mientras en marzo de 2013, el subtipo A(H7N9) infectó a tres personas, dos residentes de Shanghái y uno de la provincia de Anhui, todos los casos han sido reportados en China."
   },
   {
     "id": 5,
     "name": "Virus de Lassa",
-    "title" :  "Virus de Lassa"
+    "title" :  "Virus de Lassa",
+    "img" : "lassa.png",
+    "description" :"El primer caso reportado de infección en humanos fue el de una enfermera nigeriana y fue descubierto en 1950, sin embargo, el virus se logró aislar hasta 1969",
+    "description_" :"La enfermedad es endémica de roedores de África Occidental, por ende los países más afectados son Guinea, Liberia y Sierra Leona, el contagio se da por el contacto directo con enseres domésticos contaminados por excremento de ratón de Benin."
   },
   {
     "id": 6,
     "name": "Covid-19",
-    "title" : "Corona virus"
+    "title" : "Corona virus",
+    "img" : "covid.png",
+    "description" :"La COVID-19 es una enfermedad infecciosa causada por un nuevo virus que no había sido detectado en humanos hasta la fecha.",
+    "description_" : "El virus causa una enfermedad respiratoria como la gripe (influenza) con diversos síntomas (tos, fiebre, etc.) que, en casos graves, puede producir una neumonía. Para protegerse puede lavarse las manos regularmente y evitar tocarse la cara"
   },
   {
     "id": 7,
