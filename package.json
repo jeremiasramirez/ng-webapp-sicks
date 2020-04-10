@@ -21,7 +21,7 @@
     "@angular/platform-browser": "~9.0.0",
     "@angular/platform-browser-dynamic": "~9.0.0",
     "@angular/router": "~9.0.0",
-    "jeremias-button": "^1.0.0",
+    "jeremias-button": "^1.0.1",
     "jeremias-lib": "^1.4.9",
     "jeremias-menu": "^1.0.1",
     "jeremias-theme": "^1.0.0",
