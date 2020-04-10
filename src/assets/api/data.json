@@ -50,16 +50,25 @@
   {
     "id": 7,
     "name": "Junín",
-    "title" : "Virus de junín"
+    "title" : "Virus de junín",
+    "img" : "junin.jpeg",
+    "description" : "es una especie de arenavirus causante de la fiebre hemorrágica argentina o «fiebre hemorrágica de Junín».",
+    "description_" : "Lleva su nombre debido a que en 1958 aparecieron numerosos casos en la zona de la localidad de O'Higgins, cercana de la ciudad de Junín. Actualmente, desde el 29 de febrero de 2008, no se diagnosticaron más casos y quedó descartada la presencia del virus en la ciudad."
   },
   {
     "id": 8,
     "name": "Crimea-Congo",
-    "title" : "La Fiebre Hemorrágica de Crimea-Congo "
+    "title" : "La Fiebre Hemorrágica de Crimea-Congo ",
+    "img" : "crimea.jpeg",
+    "description" : "El virus de la fiebre hemorrágica de Crimea-Congo (FHCC) causa brotes graves de fiebre hemorrágica viral.",
+    "description_" : "es una enfermedad muy extendida causada por un virus (Nairovirus) de la familia Bunyaviridae transmitido por garrapatas. Este virus causa graves brotes de fiebre hemorrágica viral, con una tasa de letalidad del 10%-40%"
   },
   {
     "id": 9,
     "name": "Chikungunya",
-    "title" : "La fiebre chikungunya"
+    "title" : "La fiebre chikungunya",
+    "img" : "chikun.jpg",
+    "description" : " El chikungunya es un virus transmitido por los mismos mosquitos que transmiten el dengue y el Zika.",
+    "description_" : "La mayoría de las personas que están infectadas tienen síntomas, los cuales pueden ser graves. Suelen comenzar de tres a siete días después de la picadura de un mosquito infectado. Los síntomas más comunes son fiebre y dolor en las articulaciones."
   }
 ]

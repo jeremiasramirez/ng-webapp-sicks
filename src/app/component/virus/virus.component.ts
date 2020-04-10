@@ -101,6 +101,7 @@ export class VirusComponent   {
   }
 
   sliderRigth(){
+    this.okSpinner();
     if (this.sizeRoutes < 9){
          (this.sizeRoutes++);
         this.router.navigate(["virus", this.sizeRoutes])
@@ -108,6 +109,7 @@ export class VirusComponent   {
 
   }
   sliderLeft(){
+    this.okSpinner();
     if (this.sizeRoutes > 1){
     (this.sizeRoutes--);
         this.router.navigate(["virus", this.sizeRoutes])
