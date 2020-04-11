@@ -1,5 +1,23 @@
 [
   {
-    "credit" : ""
+    "id" : 1,
+    "credit" : "https://www.ecoticias.com/vida-saludable/200391/Los-virus-mas-letales-del-mundo"
+  },
+  {
+    "id" : 2,
+    "credit" : "http://files.sld.cu/hospitalaarias/files/2019/09/Virus-Los-10-m_s-letales-del-mundo.pdf"
+
+  },
+  {
+    "id" : 3,
+    "credit" : "https://es.wikipedia.org/wiki/Virus_Jun%C3%ADn"
+  },
+  {
+    "id" : 4,
+    "credit" : "https://medlineplus.gov/spanish/chikungunya.html"
+  },
+  {
+    "id" : 5,
+    "credit" : "https://www.who.int/es/news-room/fact-sheets/detail/crimean-congo-haemorrhagic-fever"
   }
 ]

@@ -1,7 +1,17 @@
 
-
-<div class="credit">
-  <a href="https://www.ecoticias.com/vida-saludable/200391/Los-virus-mas-letales-del-mundo">Creditos</a>
+<div class="inRigth text--white letter3">
+    <i class="fas fa-ellipsis-v "></i> Credits
 </div>
 
-<a href="http://files.sld.cu/hospitalaarias/files/2019/09/Virus-Los-10-m_s-letales-del-mundo.pdf"></a>
+<article class="responsive inBottom" *ngIf="!spinner.off">
+  <mat-spinner ></mat-spinner>
+</article>
+
+
+<!--*ngIf="spinner.off && credits"  -->
+
+<div class="responsive" >
+
+     <a  *ngFor="let credit_ of credits" class="blurtime inBottom card--credits large"href={{credit_.credit}}> {{credit_.credit}} </a>
+
+</div>

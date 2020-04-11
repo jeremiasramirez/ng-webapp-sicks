@@ -10,6 +10,7 @@ export class ServiceApp {
 
   public urlTitle : string = 'assets/api/lists.virus.json'
   public urlOnlyVirus : string = 'assets/api/data.json'
+  public urlCredit : string = 'assets/api/credit.json'
 
   constructor(){
 
@@ -85,7 +86,12 @@ export class ServiceApp {
 
   }
 
-
+  getCredits(){
+    return ajax.get(this.urlCredit).pipe(
+      pluck('response'),
+      delay(1000)
+    )
+  }
 
 
 
