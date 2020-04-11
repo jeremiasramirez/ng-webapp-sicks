@@ -16,14 +16,16 @@
 
 </div>
 
-<div class="sliderContainer inLeft">
+<div class="sliderContainer inTop"  >
 
   <div class=" responsive">
     {{sizeRoutes}} de 9
   </div>
+  <button   mat-button [disabled]="sizeRoutes == 1||sizeRoutes == 0" click (click)="toFirst()"><i class="fas fa-redo-alt --rotate"></i></button>
 
   <button class="btn--black" mat-button [disabled]="sizeRoutes == 1 || sizeRoutes == 0" click (click)="sliderLeft()"><i class="fas fa-arrow-left"></i></button>
   <button class="btn--black" mat-button [disabled]="sizeRoutes == 9" click (click)="sliderRigth()"><i class="fas fa-arrow-right"></i></button>
+  <button   mat-button [disabled]="sizeRoutes == 9" click (click)="toLast()"><i class="fas fa-redo-alt"></i></button>
 
 </div>
 

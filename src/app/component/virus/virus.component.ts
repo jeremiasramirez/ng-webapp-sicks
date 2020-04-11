@@ -115,5 +115,15 @@ export class VirusComponent   {
         this.router.navigate(["virus", this.sizeRoutes])
     }
   }
+  toLast(){
+    this.okSpinner();
+    this.router.navigate(["virus", 9])
+
+  }
+  toFirst(){
+    this.okSpinner();
+    this.router.navigate(["virus", 1])
+
+  }
 
 }

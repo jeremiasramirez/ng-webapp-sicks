@@ -9,7 +9,9 @@
 
     padding: 0 10px 0 0;
 }
-
+.--rotate{
+  transform:    rotateY(200deg);
+}
 .sliderContainer{
   display: flex;
   justify-content: flex-end;
