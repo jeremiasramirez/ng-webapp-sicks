@@ -12,6 +12,17 @@
 .--rotate{
   transform:    rotateY(200deg);
 }
+.footer{
+  height: auto;
+  padding: 0 .5em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  bottom: -1px;
+  background-color: rgba(212, 36, 58, 0.904);
+}
 .sliderContainer{
   display: flex;
   justify-content: flex-end;

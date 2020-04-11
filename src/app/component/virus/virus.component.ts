@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ServiceApp } from '../../services/service.app'
 import { ActivatedRoute , Router} from "@angular/router";
-import { timer , Subject} from "rxjs";
+import { timer ,fromEvent , Subject} from "rxjs";
 import { take} from "rxjs/operators";
 import { data_interface } from "../interfaces/type.data";
 
@@ -124,6 +124,15 @@ export class VirusComponent   {
     this.okSpinner();
     this.router.navigate(["virus", 1])
 
+  }
+
+  scrollDown(){
+    let iteratorScroll_ = 0;
+        iteratorScroll_ += 20;
+    window.scrollBy(0, iteratorScroll_);
+  }
+  scrollUp(){
+    window.scrollBy(0, 0);
   }
 
 }
